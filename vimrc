@@ -10,14 +10,18 @@ set autoindent
 set ruler
 " show (partial) command keys in the status line
 set showcmd
-
 " show line number
 set number
 
 " number of spaces a <Tab> in the text stands for
-set tabstop=4
+set tabstop=2
 " number of spaces used for each step of (auto)indent
-set shiftwidth=4
+set shiftwidth=2
+" expand <Tab> to spaces in Insert mode
+set expandtab
+" a <Tab> in an indent inserts 'shiftwidth' spaces
+set smarttab
+
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -31,11 +35,6 @@ set incsearch
 
 " character encoding used in Vim: "latin1", "utf-8","euc-jp", "big5", etc.
 set encoding=utf-8
-
-" expand <Tab> to spaces in Insert mode
-set expandtab
-" a <Tab> in an indent inserts 'shiftwidth' spaces
-set smarttab
 
 "long lines wrap
 set wrap
