@@ -23,10 +23,14 @@ set expandtab
 " a <Tab> in an indent inserts 'shiftwidth' spaces
 set smarttab
 
-"long lines wrap
-set wrap
+" disable line wrap
+set nowrap
+
+"Highlight the screen line of the cursor
+set cursorline
 
 syntax enable
+syntax on
 
 """" status line
 
@@ -55,3 +59,6 @@ nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+call plug#end()
