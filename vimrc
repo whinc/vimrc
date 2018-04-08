@@ -26,9 +26,6 @@ set smarttab
 " disable line wrap
 set nowrap
 
-"Highlight the screen line of the cursor
-set cursorline
-
 syntax enable
 syntax on
 
@@ -60,5 +57,4 @@ nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 
 call plug#begin('~/.vim/plugged')
-Plug 'vim-airline/vim-airline'
 call plug#end()
