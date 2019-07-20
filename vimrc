@@ -56,5 +56,3 @@ nnoremap <C-k> <C-W>k
 nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 
-call plug#begin('~/.vim/plugged')
-call plug#end()
